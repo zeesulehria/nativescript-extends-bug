@@ -19,10 +19,6 @@ store.registerAdapter("http", adapter, { default: true });
 
 //// **********  This class definition doest NOT Work! *******/
 class User extends Record {
-    constructor(props, opts) {
-        super(props, opts);
-        this._mapper().schema.applyDefaults(this);
-    }
 
     get fullName() {
         return "Hello World";
